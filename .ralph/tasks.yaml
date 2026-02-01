@@ -1,0 +1,33 @@
+# Ralph Wiggum Task Queue
+# Tasks are processed in order. Agent marks tasks complete and moves to next.
+
+current_task: null
+
+# PR Workflow Configuration
+pr_milestone_interval: 5
+
+# PR Tracking
+last_pr_branch: null
+last_pr_task_id: null
+last_pr_phase: null
+last_pr_number: null
+last_pr_date: null
+
+tasks:
+  # Add your tasks here from PRD
+  # See PRD_GUIDANCE.md for task structure
+  #
+  # Example task format:
+  # - id: P0-A
+  #   name: Example Task Name
+  #   status: pending
+  #   description: What this task accomplishes
+  #   acceptance_criteria:
+  #     - First requirement
+  #     - Second requirement
+  #   files_to_modify:
+  #     - path/to/file.ts
+  #   commit_message: "feat(scope): description"
+
+summary:
+  total_tasks: 0

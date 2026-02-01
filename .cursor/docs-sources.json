@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json.schemastore.org/cursor-docs-sources.json",
+  "version": "1.0.0",
+  "description": "Cursor documentation sources configuration for EvalPal project. This file contains the external documentation sources that should be indexed in Cursor's 'Docs' section. NOTE: Cursor currently requires manual setup via Settings UI - this file serves as a reference.",
+  "documentationSources": [
+    {
+      "name": "React Reference",
+      "type": "url",
+      "url": "https://react.dev/reference",
+      "description": "Official React documentation and API reference",
+      "priority": "high"
+    },
+    {
+      "name": "Next.js Reference",
+      "type": "url",
+      "url": "https://nextjs.org/docs",
+      "description": "Next.js documentation and API reference",
+      "priority": "high"
+    },
+    {
+      "name": "Tailwind CSS Reference",
+      "type": "url",
+      "url": "https://tailwindcss.com/docs",
+      "description": "Tailwind CSS documentation and utility reference",
+      "priority": "high"
+    },
+    {
+      "name": "Supabase Docs",
+      "type": "url",
+      "url": "https://supabase.com/docs",
+      "description": "Supabase documentation for database and authentication",
+      "priority": "high"
+    },
+    {
+      "name": "Vercel Docs",
+      "type": "url",
+      "url": "https://vercel.com/docs",
+      "description": "Vercel deployment and platform documentation",
+      "priority": "high"
+    },
+    {
+      "name": "Google Gen AI Eval Docs",
+      "type": "url",
+      "url": "https://ai.google.dev/docs/evaluation",
+      "description": "Google Generative AI evaluation documentation",
+      "priority": "medium"
+    },
+    {
+      "name": "IBM Agent Eval Docs",
+      "type": "url",
+      "url": "https://www.ibm.com/docs/en/watsonx-assistant",
+      "description": "IBM Agent evaluation documentation",
+      "priority": "medium"
+    }
+  ],
+  "instructions": {
+    "setup": [
+      "1. Open Cursor Settings (Ctrl+, or Cmd+,)",
+      "2. Navigate to 'Indexing & Docs' section",
+      "3. Scroll to the 'Docs' section",
+      "4. Click '+ Add Doc' for each documentation source listed above",
+      "5. Enter the URL from the 'url' field for each source",
+      "6. Wait for Cursor to index each documentation source",
+      "7. For local file paths (if needed), use relative paths from project root or absolute paths that work on your machine"
+    ],
+    "automated": "If Cursor supports importing from this file, it should automatically detect and add these sources when opening the project.",
+    "crossMachineSetup": {
+      "note": "To sync documentation sources across machines:",
+      "steps": [
+        "1. Export your current Cursor docs configuration from Settings > Indexing & Docs",
+        "2. Update this file with any additional sources",
+        "3. On the new machine, manually add each source via Settings UI",
+        "4. Or use the setup script: ./setup-docs.sh (macOS/Linux) or .\\setup-docs.ps1 (Windows)"
+      ],
+      "localPaths": "If you added local file paths from another machine, update them to relative paths (from project root) or use environment variables. Cursor stores these in its local settings, not in this file."
+    }
+  },
+  "localDocumentationSources": {
+    "note": "For local documentation files, add them to docs-index.json instead. If you need to reference files outside this project, use absolute paths that are consistent across machines or relative paths.",
+    "examples": [
+      {
+        "name": "Project Documentation",
+        "type": "local",
+        "path": "docs",
+        "description": "All project documentation is indexed via docs-index.json"
+      }
+    ]
+  }
+}
+

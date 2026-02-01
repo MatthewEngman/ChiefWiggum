@@ -1,0 +1,21 @@
+# Ralph Wiggum artifacts
+.ralph/errors.log
+.ralph/archive/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node.js (for ralph-scripts)
+node_modules/

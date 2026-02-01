@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json.schemastore.org/cursor-docs-index.json",
+  "version": "1.0.0",
+  "description": "Cursor documentation indexing configuration for EvalPal project",
+  "indexing": {
+    "enabled": true,
+    "paths": [
+      {
+        "path": "docs",
+        "include": [
+          "**/*.md"
+        ],
+        "exclude": [
+          "**/node_modules/**",
+          "**/dist/**",
+          "**/coverage/**"
+        ],
+        "priority": "high"
+      },
+      {
+        "path": "README.md",
+        "priority": "high"
+      },
+      {
+        "path": "docs/api/reference.md",
+        "priority": "high",
+        "description": "API reference documentation"
+      },
+      {
+        "path": "docs/getting-started",
+        "priority": "high",
+        "description": "Quick start and setup guides"
+      },
+      {
+        "path": "docs/deployment",
+        "priority": "high",
+        "description": "Deployment and infrastructure documentation"
+      },
+      {
+        "path": "docs/testing",
+        "priority": "high",
+        "description": "Testing documentation and guides"
+      },
+      {
+        "path": "docs/DEPLOYMENT_ARCHITECTURE.md",
+        "priority": "medium",
+        "description": "System architecture documentation"
+      },
+      {
+        "path": "docs/security",
+        "priority": "high",
+        "description": "Security documentation"
+      },
+      {
+        "path": "docs/api",
+        "priority": "medium",
+        "description": "API reference documentation"
+      },
+      {
+        "path": "docs/development",
+        "priority": "medium",
+        "description": "Development guidelines and standards"
+      }
+    ],
+    "filePatterns": {
+      "include": [
+        "*.md",
+        "*.mdx",
+        "README*",
+        "CHANGELOG*",
+        "CONTRIBUTING*",
+        "LICENSE*"
+      ],
+      "exclude": [
+        "node_modules/**",
+        "dist/**",
+        "coverage/**",
+        "test-results/**",
+        "playwright-report/**",
+        ".git/**"
+      ]
+    },
+    "metadata": {
+      "projectName": "EvalPal",
+      "projectDescription": "Test and evaluate your AI agents with confidence",
+      "mainDocumentationPath": "docs/README.md",
+      "quickStartPath": "docs/getting-started/quick-start.md"
+    }
+  }
+}
+
