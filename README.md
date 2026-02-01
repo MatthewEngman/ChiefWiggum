@@ -1,17 +1,25 @@
 # Chief Wiggum - Ralph Wiggum Autonomous Coding Loop
 
-**A generic, reusable autonomous coding loop system that can be deployed to any
-project.**
+**Chief Wiggum runs Ralph Wiggum loops** — a supervisor framework for autonomous
+AI coding agents.
 
-Chief Wiggum provides a complete framework for setting up the Ralph Wiggum
-autonomous coding loop in any software project, regardless of language or
-framework.
+---
+
+## 🎯 The Hierarchy
+
+| Role | Description |
+|------|-------------|
+| **Chief Wiggum** | The supervisor/framework that orchestrates everything |
+| **Ralph Wiggum** | The autonomous coding loop that implements tasks one at a time |
+
+**Chief Wiggum** provides the infrastructure (scripts, guardrails, PR workflow),
+while **Ralph Wiggum** loops handle the actual task implementation.
 
 ---
 
 ## 🚀 What is Ralph Wiggum?
 
-Ralph Wiggum is an autonomous coding agent that works through a task queue,
+Ralph Wiggum is an autonomous coding agent loop that works through a task queue,
 implementing features one task at a time with comprehensive testing, quality
 gates, and milestone-based PR creation.
 

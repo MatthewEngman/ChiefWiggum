@@ -1,6 +1,11 @@
 # Chief Wiggum Autonomous Mode
 
-**Fire-and-forget autonomous development with multiple PRs ready for review.**
+**Chief Wiggum runs Ralph Wiggum loops** — fire-and-forget autonomous development
+with multiple PRs ready for review.
+
+Chief Wiggum is the supervisor that orchestrates Ralph Wiggum (the autonomous
+coding agent). You configure the tasks, Chief starts Ralph loops, and Ralph
+implements features while creating PRs at milestones.
 
 ---
 
