@@ -13,24 +13,48 @@ implements features while creating PRs at milestones.
 
 Chief Wiggum can run fully autonomously, processing a queue of tasks and creating PRs at milestones. You kick it off and come back to find multiple PRs ready for review.
 
-```
-┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│   You       │     │   Chief     │     │   GitHub    │
-│   (Human)   │────▶│   Wiggum    │────▶│   (PRs)     │
-│             │     │   (Agent)   │     │             │
-└─────────────┘     └─────────────┘     └─────────────┘
-     │                    │                    │
-     │  1. Setup tasks    │                    │
-     │  2. Start loop     │                    │
-     │  3. Go to lunch    │                    │
-     │                    │ 4. Implement       │
-     │                    │    tasks           │
-     │                    │ 5. Run tests       │
-     │                    │ 6. Create PRs ────▶│ PR #1
-     │                    │                    │ PR #2
-     │                    │                    │ PR #3
-     │◀───────────────────────────────────────│
-     │  7. Review PRs                         │
+```mermaid
+flowchart TB
+    subgraph You["👤 You (Human)"]
+        A1[Setup tasks.yaml]
+        A2[Start Chief Wiggum]
+        A3[Go do other things]
+        A4[Review PRs]
+    end
+
+    subgraph Chief["🎖️ Chief Wiggum (Supervisor)"]
+        B1[Load task queue]
+        B2[Start Ralph loop]
+        B3[Monitor progress]
+        B4[Check milestones]
+    end
+
+    subgraph Ralph["🔄 Ralph Wiggum Loop"]
+        C1[Read current task]
+        C2[Implement task]
+        C3[Run tests]
+        C4[Update status]
+        C5{More tasks?}
+    end
+
+    subgraph GitHub["📦 GitHub"]
+        D1[PR #1]
+        D2[PR #2]
+        D3[PR #3]
+    end
+
+    A1 --> A2 --> B1
+    A2 --> A3
+    B1 --> B2 --> C1
+    C1 --> C2 --> C3 --> C4 --> C5
+    C5 -->|Yes| C1
+    C5 -->|Milestone| B4
+    B4 -->|Create PR| D1
+    B4 -->|Create PR| D2
+    B4 -->|Create PR| D3
+    D1 --> A4
+    D2 --> A4
+    D3 --> A4
 ```
 
 ---
