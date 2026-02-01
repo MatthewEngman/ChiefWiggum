@@ -112,6 +112,7 @@ cat .ralph/PRD_GUIDANCE.md
 ### IDE Integration
 
 - **`.ralph/IDE_INTEGRATION.md`** - Using with Cursor, Windsurf, Claude Code, Antigravity, Copilot
+- **`.ralph/AUTONOMOUS_MODE.md`** - Fire-and-forget operation with auto-PRs
 
 ---
 
