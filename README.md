@@ -109,11 +109,9 @@ cat .ralph/PRD_GUIDANCE.md
 - **`.ralph/PROMPT_build.md`** - Agent operating instructions
 - **`.ralph/ARCHIVAL_WORKFLOW.md`** - Session archival process
 
-### Advanced Topics
+### IDE Integration
 
-- **`.ralph/BRANCH_STRATEGY.md`** - Strategy for breaking up commits into
-  feature branches
-- **`.ralph/TESTING_GAPS_ANALYSIS.md`** - Testing requirements by feature phase
+- **`.ralph/IDE_INTEGRATION.md`** - Using with Cursor, Windsurf, Claude Code, Antigravity, Copilot
 
 ---
 
