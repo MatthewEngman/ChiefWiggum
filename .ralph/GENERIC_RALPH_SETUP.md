@@ -17,18 +17,17 @@ Copy these files/directories to your project:
 ├── PROMPT_build.md            # Agent operating instructions (generic)
 ├── PRD_GUIDANCE.md            # PRD creation guidance
 ├── README.md                  # Workflow overview
-└── templates/
-    ├── tasks.yaml.template    # Task queue template
-    └── guardrails.md.template # Guardrails template
+├── guardrails.md              # Generated (project-specific)
+└── tasks.yaml                 # Task queue (generated)
 
 .cursor/ralph-scripts/
 ├── ralph-once.sh              # Single iteration script
 ├── ralph-loop.sh              # Full loop script
-├── check-coverage.js           # Coverage checker (generic)
+├── check-coverage.js          # Coverage checker (generic)
 ├── check-milestone.js         # Milestone checker
 ├── create-pr.js               # PR creation
 ├── archive-session.js         # Session archival
-└── init-ralph.js              # Project initialization (NEW)
+└── init-ralph.js              # Project initialization
 ```
 
 ### 2. Run Initialization

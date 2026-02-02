@@ -16,6 +16,12 @@ A clear description of what's broken.
 What should happen.
 
 **Environment**
-- IDE: (Cursor/Windsurf/Claude Code/etc.)
+- IDE: (Cursor/Windsurf/Claude Code/Antigravity/Copilot)
 - OS: (Windows/macOS/Linux)
-- Node version: 
+- Node version:
+- Project type: (TypeScript/Python/Go/Rust/Java/Other)
+
+**Error logs**
+```
+Paste relevant error messages here
+```
