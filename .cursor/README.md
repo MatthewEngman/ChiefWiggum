@@ -9,8 +9,6 @@ This directory contains Cursor IDE-specific configuration files.
 - `.cursor/docs-sources.json` - External documentation sources reference (may require manual setup)
 - `.cursor/setup-docs.sh` - Setup script for macOS/Linux (displays sources to add)
 - `.cursor/setup-docs.ps1` - Setup script for Windows (displays sources to add)
-- `.cursor/verify-docs.sh` - Verification script for macOS/Linux (checks what's configured)
-- `.cursor/verify-docs.ps1` - Verification script for Windows (checks what's configured)
 
 ## Current Setup
 
@@ -83,14 +81,7 @@ This file serves as a **reference** for external documentation sources. **Cursor
    # Then manually add via Settings UI
    ```
 
-3. **Verify setup:**
-   ```bash
-   # Check what's configured
-   ./verify-docs.sh  # macOS/Linux
-   .\verify-docs.ps1  # Windows
-   ```
-
-4. **For local file paths:**
+3. **For local file paths:**
    - If you added local file paths, they're stored in Cursor's local settings
    - Update `docs-index.json` for project-local files
    - For files outside the project, use relative paths or consistent absolute paths

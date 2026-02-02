@@ -13,3 +13,9 @@ What you'd like to happen.
 
 **Alternatives considered**
 Other solutions you've thought about.
+
+**Use case**
+Which project types or IDEs would benefit from this feature?
+
+**Additional context**
+Any other information that would help.

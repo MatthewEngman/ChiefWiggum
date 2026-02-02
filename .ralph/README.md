@@ -23,11 +23,8 @@ Completed sessions are archived to `.ralph/archive/session-<timestamp>/`
 - **`tasks.yaml`** - Task queue with current task and status
 - **`PRD_GUIDANCE.md`** - How to create PRDs with atomic tasks
 
-### Analysis Documents
+### Session Artifacts
 
-- **`TESTING_GAPS_ANALYSIS.md`** - Comprehensive testing gaps by feature phase
-- **`BRANCH_STRATEGY.md`** - Strategy for breaking up commits into feature
-  branches with tests
 - **`ARCHIVAL_WORKFLOW.md`** - How to archive sessions after completion
 
 ### Helper Scripts
